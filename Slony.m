@@ -3,7 +3,7 @@ bw=rgb2gray(I);
 level=150;
 binar=bw>level;
 binar=bwareaopen(binar,600);
-binat=imclearborder(binar);
+binar=imclearborder(binar);
 [B,L]=bwboundaries(binar,'noholes');
 Reg=max(L(:));
 %imshow(label2rgb(L))
